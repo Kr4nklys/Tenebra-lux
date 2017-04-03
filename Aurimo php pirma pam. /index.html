@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Translator</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class='col-md-6 offset-md-3 form-styling'>
+				<h1>This a translator - English to Lithuanian</h1>
+				<form class="form-inline" method="get">
+					<div class="form-group">
+					<label>Werd</label>
+						<input type="text" class="form-control" name='werd'>
+					</div>
+					<input type="submit" name="translate" value="Translate" class="btn btn-default" />
+					<p>
+						<strong>Werd is </strong> <?php echo $werd ?><br>
+						<strong>Translation is </strong> <?php echo $dictionary[$werd]; ?>
+					</p>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+	</html>

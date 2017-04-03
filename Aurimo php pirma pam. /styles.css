@@ -1,0 +1,32 @@
+h1{
+	color: darkred;
+	text-align: justify;
+	font-size: 2em;
+}
+.form-styling{
+	background-color: black;
+	border: solid 1px black;
+	text-align: left;
+	padding: 30px;
+}
+.form-styling p {
+	color: gold;
+	font-size: 1.5em;
+}
+.form-group label {
+	color: darkred;
+}
+.form-control{
+	background-color: gold;
+	color: darkred;
+	margin-left: 200px;
+}
+.btn{
+	margin-top: 30px;
+	display: block;
+}
+.btn-default{
+	background-color: black;
+	color: darkred;
+	border-color: gold;
+}
