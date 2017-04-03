@@ -1,0 +1,31 @@
+display: flex; ---- labai naujas nenaudoti su saitais kuriais nesinaudoja jauni zmones jis neveikia su senomis narsyklemis. 
+
+display flex- nusako kad elementas kuriam jis panaudotas tai kontaineris lankstus ir keicia didi nuo kontento 
+
+flex-direction: row; - kryptis kad viena eilute 
+
+display flex vienodi tarpai buna kai naudoji savybe - justitfy-content: space-around
+
+
+z-index - savybe kuri sugeba kontroliuoti sluoksnius. kuo auksciau tuo labiau i prieki blocki ideta
+
+
+.classList.contains --- elemente esancios clases turi  
+
+icon.classList.toggle(); ---jei klase randa ja istrina jei neranda tai ja iraso;  
+
+window.setInterval -- intervalas
+
+null ir false yra is esmes tas pats
+
+
+// html //
+data-required = 'yes' data-validate= 'yes' 
+data - : duomenu atributas jis naudojams sieti ivedamu duomenu atributa su javascript ir kitomis susijusiomis programavimo kalbomis kaip pvz css, 
+data sasaha input[data-***** = "yes" //arba "no"]{}
+
+
+
+
+PHP\
+failus laikyti "Dev/scotchbox/public"   per interneta eiti naudojant IP - 192.168.33.10
