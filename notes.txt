@@ -29,3 +29,42 @@ data sasaha input[data-***** = "yes" //arba "no"]{}
 
 PHP\
 failus laikyti "Dev/scotchbox/public"   per interneta eiti naudojant IP - 192.168.33.10
+
+
+
+.php
+---
+<? php
+	$variable = 'string';
+	$integer = 5;
+	$float = 3.14;
+	$array = [];['a', 3 , 3.14]
+		array(); array ('a', 3, 3.14);
+	echo $string/ $float/ $integer; --- shows in page
+	print -- shows in page also
+	print($array) 
+	
+
+	array(masyvas) gali buti arba paprastas arba gali buti sudetingas su daug masyvu masyvuose ir t.t
+	$array['a','b','c', 'd' => 'e' ]  => --- yra skirta priskirti masyvo elementui specifine reiksme
+
+// yra zymymas komentaras php arba galima zimeti ir 
+
+?>
+
+$_GET ||array
+$_POST ||array
+
+
+www.delfi.lt?id=742
+echo$_GET['id']; 
+
+
+
+include 'index.html';  -- iterpia dokumenta
+require 'index.html';  -- 
+
+include_once 'index.html'
+require_once 'index.html'
+
+
