@@ -12,19 +12,44 @@
 			<div class='col-md-6 offset-md-3 form-styling'>
 				<h1>This a translator - English to Lithuanian</h1>
 				<form class="form-inline" method="get">
-					<div class="form-group">
-					<label>Werd</label>
-						<input type="text" class="form-control" name='werd'>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<label>Werd:</label>
+								<input type="text" class="form-control" name='werd' value="<?php echo $originalWerd ?>";">
+							</div>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<label>Translate:</label>
+								<select name="direction" class="form-control">
+								<option value="toLt">To Lithuanian</option>
+									<option value="toEng">To English</option>
+								</select>
+							</div>
+						</div>
 					</div>
 					<input type="submit" name="translate" value="Translate" class="btn btn-default" />
-					<p>
-						<strong>Werd is </strong> <?php echo $werd ?><br>
-						<strong>Translation is </strong> <?php echo $dictionary[$werd]; ?>
-					</p>
+					</form>
+					<?php if (isset($werd)) { ?>
+					<?php if (isset($phrase)) { ?>
+						<p>
+							<strong>Werd is </strong> <?php echo $werd ?><br>
+							<strong>Translation is </strong> <?php echo $phrase; ?>
+						</p>
+						<?php } else { ?>
+						<p>
+							<strong>Werd is </strong> <?php echo $werd ?><br>
+							<strong>Translation is not found </strong> 
+						</p>
+						<?php } ?>
+						<?php } ?>
+					</div>
 				</div>
 			</div>
-		</div>
-		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	</body>
-	</html>
+			<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+			<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		</body>
+		</html>
