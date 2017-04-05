@@ -34,7 +34,7 @@
 					<input type="submit" name="translate" value="Translate" class="btn btn-default" />
 					</form>
 					<?php if (isset($werd)) { ?>
-					<?php if (isset($phrase)) { ?>
+					<?php if (isset($phrase) && !empty($phrase)) { ?>
 						<p>
 							<strong>Werd is </strong> <?php echo $werd ?><br>
 							<strong>Translation is </strong> <?php echo $phrase; ?>
