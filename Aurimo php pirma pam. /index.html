@@ -25,8 +25,8 @@
 							<div class="form-group">
 								<label>Translate:</label>
 								<select name="direction" class="form-control">
-								<option value="toLt">To Lithuanian</option>
-									<option value="toEng">To English</option>
+								<option value="toLt"<?php if ($direction == 'toLt'){ ?> selected='selected'<?php }?>>To Lithuanian</option>
+								<option value="toEng"<?php if ($direction == 'toEng'){ ?> selected='selected'<?php }?>>To English</option>
 								</select>
 							</div>
 						</div>

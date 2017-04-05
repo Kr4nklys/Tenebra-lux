@@ -68,3 +68,16 @@ include_once 'index.html'
 require_once 'index.html'
 
 
+if (salyga) {
+	kodas jei TRUE
+} else {
+kodas jei FALSE
+};
+
+array-key-exists (index, masyvas)
+
+isset($masyvas['index]);
+
+
+
+

@@ -24,6 +24,7 @@ $dictionary = [
 ];
 
 $originalWerd = '';
+$direction = 'toLt';
 if (array_key_exists('werd', $_GET)) {
 	$originalWerd = ($_GET['werd']);	
 	$werd = strtolower($_GET['werd']);
@@ -34,8 +35,10 @@ if ($_GET['direction'] == 'toEng') {
 else{
 	if(array_key_exists($werd, $dictionary)) {
 	$phrase = $dictionary[$werd];
+	// $direction = $_GET['direction'];
 	}
 }
+	$direction = $_GET['direction'];
 }
 // includes of html
 include 'index.html';
